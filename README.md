@@ -2,6 +2,8 @@
   <img alt="dust" src="assets/dust_banner.png" width="400">
 </p>
 
+<p align="center"><strong>Device Unified Serving Toolkit</strong></p>
+
 # dust-core-swift
 
 DustCore contract types and protocols for on-device ML — pure Swift, no external dependencies.
