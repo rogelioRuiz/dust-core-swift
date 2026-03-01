@@ -10,5 +10,6 @@ let package = Package(
     targets: [
         .target(name: "DustCore", path: "Sources/DustCore"),
         .testTarget(name: "DustCoreTests", dependencies: ["DustCore"], path: "Tests/DustCoreTests")
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
