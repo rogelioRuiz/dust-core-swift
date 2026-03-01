@@ -1,3 +1,13 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="../assets/branding/dust_white.png">
+    <source media="(prefers-color-scheme: light)" srcset="../assets/branding/dust_black.png">
+    <img alt="dust" src="../assets/branding/dust_black.png" width="200">
+  </picture>
+</p>
+
+<p align="center"><strong>Device Unified Serving Toolkit</strong></p>
+
 # dust-core-swift
 
 DustCore contract types and protocols for on-device ML — pure Swift, no external dependencies.
@@ -159,3 +169,9 @@ swift test    # 29 XCTest tests (11 registry + 18 types)
 ```
 
 Requires macOS with Swift toolchain. No Xcode project needed — runs via SPM.
+
+---
+
+<p align="center">
+  Part of <a href="../README.md"><strong>dust</strong></a> — Device Unified Serving Toolkit
+</p>
