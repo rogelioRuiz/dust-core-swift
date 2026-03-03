@@ -7,6 +7,7 @@ public enum DustModelFormat: String, Equatable, Hashable, Sendable, CaseIterable
     case coreml = "coreml"
     case tflite = "tflite"
     case gguf = "gguf"
+    case mlx = "mlx"
     case custom = "custom"
 }
 
