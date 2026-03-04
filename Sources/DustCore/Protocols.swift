@@ -27,6 +27,20 @@ public protocol DustEmbeddingService: AnyObject {
     func status() -> DustEmbeddingStatus
 }
 
+// MARK: - ModelSessionFactory
+
+/// Creates `DustModelSession` instances on demand.
+///
+/// Task libraries (LLM, ONNX, …) conform to this protocol so that
+/// DustServe can delegate session creation without knowing the
+/// concrete inference engine.
+public protocol DustModelSessionFactory: Sendable {
+    func makeSession(
+        descriptor: DustModelDescriptor,
+        priority: DustSessionPriority
+    ) async throws -> any DustModelSession
+}
+
 // MARK: - ModelServer
 
 public protocol DustModelServer: AnyObject {
